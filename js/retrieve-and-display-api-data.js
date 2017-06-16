@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('#get-attendees-button').click(function() {
-    $.get('http://138.197.214.133/api/v1/attendee', function(response) {
+    $.get('https://138.197.214.133/api/v1/attendee', function(response) {
       response.forEach(function(attendeeInformation){
         $('#list-of-attendees').append(
          '<div class="well attendee-entry">' +
